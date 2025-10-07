@@ -1,0 +1,6 @@
+{
+  "HomePage": {
+    "title": "Welcome to translate website",
+    "description": "This is multilingual website using next.js with next-intl"
+  }
+}
