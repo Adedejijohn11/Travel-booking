@@ -17,6 +17,9 @@ export default function Home({
       <div className="flex flex-col justify-center items-center mt-10">
         <h1 className="text-3xl">{t("title")}</h1>
         <p className="text-2xl text-center">{t("description")}</p>
+        <button className="bg-green-400 py-4 px-20 rounded-2xl">
+          {t("btnText")}
+        </button>
       </div>
     </>
   );

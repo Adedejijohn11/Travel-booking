@@ -1,6 +1,7 @@
 {
   "HomePage": {
-    "title": "Bienvenue sur le site de traduction",
-    "description": "Il s'agit d'un site Web multilingue utilisant next.js avec next-intl"
+    "btnText": "Cliquez ici",
+    "description": "Ceci est un site web multilingue utilisant Next.js avec Next.intl",
+    "title": "Bienvenue sur la page de traduction"
   }
 }

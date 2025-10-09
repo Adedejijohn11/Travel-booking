@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import Navbar from "../components/Navbar";
 import { setRequestLocale } from "next-intl/server";
+import Navbar from "@/components/Navbar";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
