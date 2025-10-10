@@ -8,5 +8,12 @@
     "about": "About",
     "explore": "Expolre",
     "find": "FindRoom"
+  },
+  "SectionOne": {
+    "checkin": "Check In",
+    "Checkout": "Check Out",
+    "find": "Find Your Room Here",
+    "guest": "Guest",
+    "search": "Search"
   }
 }

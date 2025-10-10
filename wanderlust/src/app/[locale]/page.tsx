@@ -1,3 +1,6 @@
+import SectionOne from "@/components/sections/SectionOne";
+import SectionThree from "@/components/sections/SectionThree";
+import SectionTwo from "@/components/sections/SectionTwo";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import Image from "next/image";
@@ -42,9 +45,15 @@ export default function Home({
             </div>
           </div>
         </div>
-        <div className="h-[600px] w-[100%] bg-rose-600 ">section-1</div>
-        <div className="h-[600px] w-[100%] bg-cyan-700">section-2</div>
-        <div className="h-[600px] w-[100%] bg-purple-500">section-3</div>
+        <div className="h-[600px] w-[100%]  mt-10 ">
+          <SectionOne />
+        </div>
+        <div className="h-[600px] w-[100%] bg-cyan-700">
+          <SectionTwo />
+        </div>
+        <div className="h-[600px] w-[100%] bg-purple-500">
+          <SectionThree />
+        </div>
       </div>
     </>
   );

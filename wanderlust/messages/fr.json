@@ -8,5 +8,12 @@
     "about": "À propos",
     "explore": "Explorer",
     "find": "TrouverChambre"
+  },
+  "SectionOne": {
+    "checkin": "Enregistrement",
+    "Checkout": "Vérifiez",
+    "find": "Trouvez votre chambre ici",
+    "guest": "Invité",
+    "search": "Recherche"
   }
 }

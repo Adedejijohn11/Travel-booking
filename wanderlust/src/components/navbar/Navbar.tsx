@@ -1,8 +1,8 @@
 import React from "react";
-import LocaleSwitcher from "./LocaleSwitcher";
 import { IoIosSearch } from "react-icons/io";
 import { IoIosMenu } from "react-icons/io";
 import { useTranslations } from "next-intl";
+import LocaleSwitcher from "./LocaleSwitcher";
 
 const Navbar = () => {
   const t = useTranslations("navbar");
