@@ -1,7 +1,12 @@
 {
   "HomePage": {
     "btnText": "Cliquez ici",
-    "description": "Ceci est un site web multilingue utilisant Next.js avec Next.intl",
-    "title": "Bienvenue sur la page de traduction"
+    "description": "Redécouvrez la beauté dans les plaisirs les plus simples de la vie et laissez chaque moment ici vous rappeler la joie de la véritable détente",
+    "title": "Rafraîchissez, détendez-vous et redécouvrez les plaisirs simples de la vie"
+  },
+  "navbar": {
+    "about": "À propos",
+    "explore": "Explorer",
+    "find": "TrouverChambre"
   }
 }

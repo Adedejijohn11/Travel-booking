@@ -17,7 +17,7 @@ export default function LocaleSwitcher() {
 
   return (
     <select
-      className="bg-black"
+      className="bg-white"
       value={locale}
       onChange={(e) => switchLocale(e.target.value)}
     >

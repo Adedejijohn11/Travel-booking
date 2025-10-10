@@ -1,7 +1,12 @@
 {
   "HomePage": {
     "btnText": "Click here ",
-    "description": "This a multilingual website using Next.js with Next.intl",
-    "title": "Welcome to translate page"
+    "description": "Rediscover the beauty in life simplest Pleasures and let every moment here remind you of the joy of true relaxation",
+    "title": " Refresh,Relax and Rediscover Life's Simple Pleasures"
+  },
+  "navbar": {
+    "about": "About",
+    "explore": "Expolre",
+    "find": "FindRoom"
   }
 }
