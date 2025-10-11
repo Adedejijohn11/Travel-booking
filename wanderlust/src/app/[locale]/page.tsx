@@ -27,7 +27,7 @@ export default function Home({
             height={100}
             className="h-full w-[100%] object-cover absolute top-0"
           />
-          <div className="absolute bottom-2 h-[250px] md:h-[230px] w-full flex flex-col md:flex-row justify-between items-center px-0 lg:px-5 text-white ">
+          <div className="absolute bottom-2 h-[250px] md:h-[230px] w-full flex flex-col md:flex-row justify-between items-center px-3 md:px-5 text-white ">
             <div>
               <h1 className="w-[100%] md:w-[65%] text-[20px] md:text-2xl lg:text-4xl xl:text-5xl">
                 {t("title")}

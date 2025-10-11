@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "titleKey": "movies.movie1.title",
+    "descriptionKey": "movies.movie1.description"
+  },
+  {
+    "id": 2,
+    "titleKey": "movies.movie2.title",
+    "descriptionKey": "movies.movie2.description"
+  }
+]

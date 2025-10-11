@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import React from "react";
 import { IoIosSearch } from "react-icons/io";
 
@@ -44,7 +45,110 @@ const SectionOne = () => {
           </span>
         </button>
       </form>
-      <div></div>
+      {/* cards */}
+      <div className=" h-full w-full flex flex-row mt-10 overflow-x-scroll scroll scroll-smooth ">
+        {/* <div> */}
+        <div className=" w-[80%] flex flex-row gap-3 shrink-0 ">
+          <div className="h-[380px] w-[50%] rounded-[30px] overflow-hidden">
+            <Image
+              src="/islands/fiji-island.jpg"
+              alt="background-img"
+              width={400}
+              height={50}
+              className="h-full w-full object-cover"
+            />
+          </div>
+          <div className="relative h-[380px] w-[50%] flex flex-col justify-between">
+            <div className="pt-5">
+              <h2 className="text-2xl">Lagon View Villa</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate est quis eum, officia asperiores itaque reiciendis?
+                Asperiores repellendus aperiam dignissimos.
+              </p>
+            </div>
+
+            <div className="h-[150px] w-[200px] rounded-2xl overflow-hidden">
+              <Image
+                src="/islands/fiji-island.jpg"
+                alt="background-img"
+                width={400}
+                height={50}
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <div className="absolute bottom-0 right-3">Pagination</div>
+          </div>
+        </div>
+
+        <div className=" w-[80%] flex flex-row gap-3 shrink-0 ">
+          <div className="h-[380px] w-[50%] rounded-[30px] overflow-hidden">
+            <Image
+              src="/islands/fiji-island.jpg"
+              alt="background-img"
+              width={400}
+              height={50}
+              className="h-full w-full object-cover"
+            />
+          </div>
+          <div className="relative h-[380px] w-[50%] flex flex-col justify-between">
+            <div className="pt-5">
+              <h2 className="text-2xl">Lagon View Villa</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate est quis eum, officia asperiores itaque reiciendis?
+                Asperiores repellendus aperiam dignissimos.
+              </p>
+            </div>
+
+            <div className="h-[150px] w-[200px] rounded-2xl overflow-hidden">
+              <Image
+                src="/islands/fiji-island.jpg"
+                alt="background-img"
+                width={400}
+                height={50}
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <div className="absolute bottom-0 right-3">Pagination</div>
+          </div>
+        </div>
+
+        <div className=" w-[80%] flex flex-row gap-3 shrink-0 ">
+          <div className="h-[380px] w-[50%] rounded-[30px] overflow-hidden">
+            <Image
+              src="/islands/fiji-island.jpg"
+              alt="background-img"
+              width={400}
+              height={50}
+              className="h-full w-full object-cover"
+            />
+          </div>
+          <div className="relative h-[380px] w-[50%] flex flex-col justify-between">
+            <div className="pt-5">
+              <h2 className="text-2xl">Lagon View Villa</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate est quis eum, officia asperiores itaque reiciendis?
+                Asperiores repellendus aperiam dignissimos.
+              </p>
+            </div>
+
+            <div className="h-[150px] w-[200px] rounded-2xl overflow-hidden">
+              <Image
+                src="/islands/fiji-island.jpg"
+                alt="background-img"
+                width={400}
+                height={50}
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <div className="absolute bottom-0 right-3">Pagination</div>
+          </div>
+        </div>
+
+        {/* </div> */}
+      </div>
     </div>
   );
 };
