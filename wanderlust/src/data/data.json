@@ -1,12 +1,26 @@
 [
   {
     "id": 1,
-    "titleKey": "movies.movie1.title",
-    "descriptionKey": "movies.movie1.description"
+    "title": "Fiji's Island ",
+    "description": "Escape to paradise with fiji's best luxury private island hotels. Ultimate exlusively and beauty await",
+    "image": ["/islands/fiji-island.jpg", "/islands/fiji-island.jpg"]
   },
   {
     "id": 2,
-    "titleKey": "movies.movie2.title",
-    "descriptionKey": "movies.movie2.description"
+    "title": "Yap Island",
+    "description": "Discove Yap island, where local artisans lead authenitc culture experience",
+    "image": ["/islands/Yap-island.jpg", "/islands/Yap-island.jpg"]
+  },
+  {
+    "id": 3,
+    "title": "Caribbean Island",
+    "description": "Discove Yap island, where local artisans lead authenitc culture experience",
+    "image": ["/islands/Caribbean-island.jpg", "/islands/Caribbean-island.jpg"]
+  },
+  {
+    "id": 4,
+    "title": "Maldives Island",
+    "description": "Discove Yap island, where local artisans lead authenitc culture experience",
+    "image": ["/islands/fiji-island.jpg", "/islands/fiji-island.jpg"]
   }
 ]

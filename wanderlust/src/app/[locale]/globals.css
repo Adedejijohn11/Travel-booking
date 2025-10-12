@@ -24,3 +24,43 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.paginationBttns {
+  width: 80%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paginationBttns a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid var(--foreground);
+  color: var(--foreground);
+  cursor: pointer;
+}
+
+.paginationBttns a:hover {
+  color: white;
+  background-color: var(--foreground);
+}
+
+.paginationActive a {
+  color: white;
+  background-color: var(--foreground);
+}
+
+.previousBttn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nextBttn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

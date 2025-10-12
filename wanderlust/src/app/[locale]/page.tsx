@@ -1,4 +1,4 @@
-import SectionOne from "@/components/sections/SectionOne";
+import SectionOne from "@/components/sections/sectionOne/SectionOne";
 import SectionThree from "@/components/sections/SectionThree";
 import SectionTwo from "@/components/sections/SectionTwo";
 import { useTranslations } from "next-intl";
