@@ -5,7 +5,7 @@
     "description": "Escape to paradise with fiji's best luxury private island hotels. Ultimate exlusively and beauty await",
     "image": [
       "/islands/fiji-island.jpg",
-      "/islands/fiji-island.jpg",
+      "/islands/room-1.jpg",
       "/islands/Yap-island.jpg"
     ]
   },
@@ -15,7 +15,7 @@
     "description": "Discove Yap island, where local artisans lead authenitc culture experience",
     "image": [
       "/islands/Yap-island.jpg",
-      "/islands/Yap-island.jpg",
+      "/islands/room-2.jpg",
       "/islands/Caribbean-island.jpg"
     ]
   },
@@ -25,8 +25,8 @@
     "description": "Discove Yap island, where local artisans lead authenitc culture experience",
     "image": [
       "/islands/Caribbean-island.jpg",
-      "/islands/Caribbean-island.jpg",
-      "/islands/fiji-island.jpg"
+      "/islands/room-3.jpg",
+      "/islands/maldives-island.jpg"
     ]
   },
   {
@@ -34,8 +34,38 @@
     "title": "Maldives Island",
     "description": "Discove Yap island, where local artisans lead authenitc culture experience",
     "image": [
-      "/islands/fiji-island.jpg",
-      "/islands/fiji-island.jpg",
+      "/islands/maldives-island.jpg",
+      "/islands/room-4.jpg",
+      "/islands/Margaritaville-island.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Margarita Island",
+    "description": "Discove Yap island, where local artisans lead authenitc culture experience",
+    "image": [
+      "/islands/Margaritaville-island.jpg",
+      "/islands/room-5.jpg",
+      "/islands/regis-island.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Regis Island",
+    "description": "Discove Yap island, where local artisans lead authenitc culture experience",
+    "image": [
+      "/islands/regis-island.jpg",
+      "/islands/room-6.jpg",
+      "/islands/tropical-island.jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Tropical Island",
+    "description": "Discove Yap island, where local artisans lead authenitc culture experience",
+    "image": [
+      "/islands/tropical-island.jpg",
+      "/islands/room-7.jpg",
       "/islands/fiji-island.jpg"
     ]
   }
