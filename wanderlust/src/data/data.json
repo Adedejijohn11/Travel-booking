@@ -3,24 +3,40 @@
     "id": 1,
     "title": "Fiji's Island ",
     "description": "Escape to paradise with fiji's best luxury private island hotels. Ultimate exlusively and beauty await",
-    "image": ["/islands/fiji-island.jpg", "/islands/fiji-island.jpg"]
+    "image": [
+      "/islands/fiji-island.jpg",
+      "/islands/fiji-island.jpg",
+      "/islands/Yap-island.jpg"
+    ]
   },
   {
     "id": 2,
     "title": "Yap Island",
     "description": "Discove Yap island, where local artisans lead authenitc culture experience",
-    "image": ["/islands/Yap-island.jpg", "/islands/Yap-island.jpg"]
+    "image": [
+      "/islands/Yap-island.jpg",
+      "/islands/Yap-island.jpg",
+      "/islands/Caribbean-island.jpg"
+    ]
   },
   {
     "id": 3,
     "title": "Caribbean Island",
     "description": "Discove Yap island, where local artisans lead authenitc culture experience",
-    "image": ["/islands/Caribbean-island.jpg", "/islands/Caribbean-island.jpg"]
+    "image": [
+      "/islands/Caribbean-island.jpg",
+      "/islands/Caribbean-island.jpg",
+      "/islands/fiji-island.jpg"
+    ]
   },
   {
     "id": 4,
     "title": "Maldives Island",
     "description": "Discove Yap island, where local artisans lead authenitc culture experience",
-    "image": ["/islands/fiji-island.jpg", "/islands/fiji-island.jpg"]
+    "image": [
+      "/islands/fiji-island.jpg",
+      "/islands/fiji-island.jpg",
+      "/islands/fiji-island.jpg"
+    ]
   }
 ]
