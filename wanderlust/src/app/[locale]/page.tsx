@@ -48,7 +48,7 @@ export default function Home({
         <div className="h-[600px] w-[100%]  mt-10 ">
           <SectionOne />
         </div>
-        <div className="h-[600px] w-[100%] bg-cyan-700">
+        <div className="h-[100%] w-[100%] bg-green-50 rounded-4xl ">
           <SectionTwo />
         </div>
         <div className="h-[600px] w-[100%] bg-purple-500">
