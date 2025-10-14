@@ -26,9 +26,22 @@ const SectionTwo = () => {
           </div>
         </div>
       </div>
+      {/* --------------------Cards------------------- */}
       <div className="h-[480px] w-full flex gap-5 mt-15 ">
-        <div className="h-[320px] w-[500px] bg-foreground rounded-2xl overflow-hidden "></div>
-        <div className="h-[380px] w-[500px] rounded-2xl overflow-hidden">
+        <div className="relative h-[350px] w-[500px] bg-foreground rounded-2xl overflow-hidden  text-white px-5 pt-3">
+          <h2 className="text-[35px]">
+            Unforgettable Stays,
+            <br /> Unbeatable Offers
+          </h2>
+          <p className="text-[15px]">
+            Discover breaking destinations relax in style, and enjoy incredible
+            savings on your escape
+          </p>
+          <span className="absolute bottom-2 bg-white text-foreground py-2 px-3 rounded-4xl cursor-pointer">
+            Learn More
+          </span>
+        </div>
+        <div className="h-[400px] w-[500px] rounded-2xl overflow-hidden">
           <Image
             src="/about/about-img-1.jpg"
             alt="background-img"
@@ -37,7 +50,7 @@ const SectionTwo = () => {
             className="h-full w-full object-cover"
           />
         </div>
-        <div className="h-[430px] w-[500px]  rounded-2xl overflow-hidden">
+        <div className="h-[450px] w-[500px]  rounded-2xl overflow-hidden">
           {" "}
           <Image
             src="/about/about-img-2.jpg"
