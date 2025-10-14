@@ -4,13 +4,13 @@ import React from "react";
 const SectionTwo = () => {
   return (
     <div className="flex flex-col px-5">
-      <div className="h-[220px] w-full pt-20 flex flex-row justify-between ">
+      <div className="h-[220px] w-full pt-20 flex flex-row justify-between bg-amber-300">
         <div className="w-[15%]">
           <p>[About Us]</p>
         </div>
         <div className="w-[85%] flex flex-row   justify-between">
           <div className="w-[400px] ">
-            <h1 className="text-[40px] font-bold">
+            <h1 className="text-[30px] xl:text-[40px] font-bold">
               Discover Our Story and What Drives Us
             </h1>
           </div>
@@ -27,9 +27,9 @@ const SectionTwo = () => {
         </div>
       </div>
       {/* --------------------Cards------------------- */}
-      <div className="h-[480px] w-full flex gap-5 mt-15 ">
+      <div className="h-[480px] w-full flex gap-5 mt-15 bg-blue-400">
         <div className="relative h-[350px] w-[500px] bg-foreground rounded-2xl overflow-hidden  text-white px-5 pt-3">
-          <h2 className="text-[35px]">
+          <h2 className="text-[30px]  xl:text-[35px]">
             Unforgettable Stays,
             <br /> Unbeatable Offers
           </h2>

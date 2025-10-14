@@ -34,12 +34,15 @@ const IslandCard = () => {
   }, [displayUser]);
 
   return (
-    <div className=" h-full w-full flex flex-row mt-10">
+    <div className=" h-full w-full flex flex-row  mt-10 ">
       {/* <div> */}
 
       {displayUser.map((data) => (
-        <div key={data.id} className=" w-[80%] flex flex-row gap-3">
-          <div className="h-[380px] w-[50%] rounded-[30px] overflow-hidden">
+        <div
+          key={data.id}
+          className="h-[100%] md:h-[380px] w-[100%]  xl:w-[80%] flex flex-col  md:flex-row gap-2 md:gap-5 lg:gap-3 "
+        >
+          <div className="h-[300px]  md:h-[350px] lg:h-[380px] w-[100%] md:w-[50%] rounded-[30px] overflow-hidden ">
             <Image
               src={data.image[0]}
               alt="background-img"
@@ -48,13 +51,13 @@ const IslandCard = () => {
               className="h-full w-full object-cover"
             />
           </div>
-          <div className="relative h-[380px] w-[50%] flex flex-col justify-between">
-            <div className="pt-5">
+          <div className="relative h-[200px] md:h-[350px] lg:h-[380px] w-[100%]  md:w-[50%] flex flex-col justify-between ">
+            <div className="pt-0 md:pt-5 text-center md:text-start ">
               <h2 className="text-2xl">{data.title}</h2>
               <p>{data.description}</p>
             </div>
 
-            <div className="h-[150px] w-[200px] rounded-2xl overflow-hidden">
+            <div className="h-[100px] lg:h-[150px]  w-[150px]  lg:w-[200px] hidden md:flex rounded-2xl overflow-hidden">
               <Image
                 src={data.image[1]}
                 alt="background-img"
@@ -63,8 +66,8 @@ const IslandCard = () => {
                 className="h-full w-full object-cover"
               />
             </div>
-            <div className="absolute bottom-0 right-3 flex flex-row items-center justify-center  gap-4 ">
-              <p className=" flex justify-center text-center text-[18px]  w-full text-gray-500 ">
+            <div className="absolute bottom-5 md:bottom-0  right-[90px] md:right-3 flex flex-row items-center justify-center  gap-4 ">
+              <p className=" flex justify-center text-center text-[18px]  w-full  text-gray-500 ">
                 {pageNumber + 1} / {pageCount}
               </p>
 
@@ -88,7 +91,7 @@ const IslandCard = () => {
         </div>
       ))}
 
-      <div className="relative w-[20%] ">
+      <div className="relative w-[20%] hidden xl:flex ">
         <div className="absolute bottom-0 h-[300px] w-full  rounded-l-3xl overflow-hidden">
           {currentImg && (
             <Image

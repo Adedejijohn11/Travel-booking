@@ -45,10 +45,10 @@ export default function Home({
             </div>
           </div>
         </div>
-        <div className="h-[600px] w-[100%]  mt-10 ">
+        <div className="h-[100%] w-[100%]  mt-10 ">
           <SectionOne />
         </div>
-        <div className="h-[100%] w-[100%] bg-green-50 rounded-4xl ">
+        <div className="h-[100%] w-[100%] mt-10 bg-green-50 rounded-4xl ">
           <SectionTwo />
         </div>
         <div className="h-[600px] w-[100%] bg-purple-500">
