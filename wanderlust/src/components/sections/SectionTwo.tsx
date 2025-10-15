@@ -4,11 +4,11 @@ import React from "react";
 const SectionTwo = () => {
   return (
     <div className="flex flex-col px-5">
-      <div className="h-[100%] lg:h-[220px] w-full pt-5 md:pt-10 lg:pt-20 flex flex-col md:flex-row  justify-between bg-amber-300">
+      <div className="h-[100%] lg:h-[220px] w-full pt-5 md:pt-10 lg:pt-20 flex flex-col md:flex-row  justify-between ">
         <div className="w-[100%] md:w-[15%] text-center md:text-start">
           <p>[About Us]</p>
         </div>
-        <div className="w-[100%] md:w-[85%] flex flex-col lg:flex-row  justify-between  gap-5 lg:gap-0 pt-5 md:pt-0 bg-red-400">
+        <div className="w-[100%] md:w-[85%] flex flex-col lg:flex-row  justify-between  gap-5 lg:gap-0 pt-5 md:pt-0 ">
           <div className="w-[100%]  md:w-[400px] ">
             <h1 className="text-[20px] md:text-[30px] xl:text-[40px] text-center md:text-start font-bold ">
               Discover Our Story and What Drives Us
@@ -27,7 +27,7 @@ const SectionTwo = () => {
         </div>
       </div>
       {/* --------------------Cards------------------- */}
-      <div className="h-[100%] lg:h-[480px] w-full flex flex-col lg:flex-row items-center lg:items-center justify-center  gap-5 mt-15 bg-blue-400">
+      <div className="h-[100%] lg:h-[480px] w-full flex flex-col lg:flex-row items-center lg:items-center justify-center  gap-5 mt-15 ">
         <div className="relative h-[350px] w-[100%] md:w-[500px]  bg-foreground rounded-2xl overflow-hidden  text-white px-5 pt-3">
           <h2 className="text-[30px]  xl:text-[35px]">
             Unforgettable Stays,
