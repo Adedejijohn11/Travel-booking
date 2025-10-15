@@ -4,17 +4,17 @@ import React from "react";
 const SectionTwo = () => {
   return (
     <div className="flex flex-col px-5">
-      <div className="h-[220px] w-full pt-20 flex flex-row justify-between bg-amber-300">
-        <div className="w-[15%]">
+      <div className="h-[100%] lg:h-[220px] w-full pt-5 md:pt-10 lg:pt-20 flex flex-col md:flex-row  justify-between bg-amber-300">
+        <div className="w-[100%] md:w-[15%] text-center md:text-start">
           <p>[About Us]</p>
         </div>
-        <div className="w-[85%] flex flex-row   justify-between">
-          <div className="w-[400px] ">
-            <h1 className="text-[30px] xl:text-[40px] font-bold">
+        <div className="w-[100%] md:w-[85%] flex flex-col lg:flex-row  justify-between  gap-5 lg:gap-0 pt-5 md:pt-0 bg-red-400">
+          <div className="w-[100%]  md:w-[400px] ">
+            <h1 className="text-[20px] md:text-[30px] xl:text-[40px] text-center md:text-start font-bold ">
               Discover Our Story and What Drives Us
             </h1>
           </div>
-          <div className="flex flex-col w-[600px]">
+          <div className="w-[100%] md:w-[600px] flex flex-col justify-center items-center md:items-start text-center md:text-start ">
             <p>
               Founded with a passion for adventure and commitment to
               comfort,Wanderlust Inn was designed to be more than just a place
@@ -27,8 +27,8 @@ const SectionTwo = () => {
         </div>
       </div>
       {/* --------------------Cards------------------- */}
-      <div className="h-[480px] w-full flex gap-5 mt-15 bg-blue-400">
-        <div className="relative h-[350px] w-[500px] bg-foreground rounded-2xl overflow-hidden  text-white px-5 pt-3">
+      <div className="h-[100%] lg:h-[480px] w-full flex flex-col lg:flex-row items-center lg:items-center justify-center  gap-5 mt-15 bg-blue-400">
+        <div className="relative h-[350px] w-[100%] md:w-[500px]  bg-foreground rounded-2xl overflow-hidden  text-white px-5 pt-3">
           <h2 className="text-[30px]  xl:text-[35px]">
             Unforgettable Stays,
             <br /> Unbeatable Offers
@@ -41,7 +41,7 @@ const SectionTwo = () => {
             Learn More
           </span>
         </div>
-        <div className="h-[400px] w-[500px] rounded-2xl overflow-hidden">
+        <div className="h-[350px] lg:h-[400px] w-[100%] md:w-[500px]  rounded-2xl overflow-hidden">
           <Image
             src="/about/about-img-1.jpg"
             alt="background-img"
@@ -50,7 +50,7 @@ const SectionTwo = () => {
             className="h-full w-full object-cover"
           />
         </div>
-        <div className="h-[450px] w-[500px]  rounded-2xl overflow-hidden">
+        <div className="h-[350px] lg:h-[450px] w-[100%] md:w-[500px]  rounded-2xl overflow-hidden">
           {" "}
           <Image
             src="/about/about-img-2.jpg"

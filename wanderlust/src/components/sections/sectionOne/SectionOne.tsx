@@ -7,7 +7,7 @@ const SectionOne = () => {
 
   return (
     <div className="flex flex-col">
-      <h1 className=" text-[20px] md:text-5xl">{t("find")}</h1>
+      <h1 className=" text-[20px] md:text-2xl lg:text-5xl">{t("find")}</h1>
       <form className="flex flex-col lg:flex-row h-[100%] w-[100%] mt-4 gap-5 ">
         <div>
           <label htmlFor="date">{t("checkin")}</label> <br />
