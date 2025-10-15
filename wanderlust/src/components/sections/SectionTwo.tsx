@@ -27,8 +27,8 @@ const SectionTwo = () => {
         </div>
       </div>
       {/* --------------------Cards------------------- */}
-      <div className="h-[100%] lg:h-[480px] w-full flex flex-col lg:flex-row items-center lg:items-center justify-center  gap-5 mt-15 ">
-        <div className="relative h-[350px] w-[100%] md:w-[500px]  bg-foreground rounded-2xl overflow-hidden  text-white px-5 pt-3">
+      <div className="h-[100%] lg:h-[480px] w-full flex flex-col lg:flex-row items-center lg:items-start gap-5 mt-15 ">
+        <div className="relative h-[350px] w-[100%] md:w-[500px]  bg-foreground rounded-2xl overflow-hidden text-white px-5 pt-3">
           <h2 className="text-[30px]  xl:text-[35px]">
             Unforgettable Stays,
             <br /> Unbeatable Offers
@@ -51,7 +51,6 @@ const SectionTwo = () => {
           />
         </div>
         <div className="h-[350px] lg:h-[450px] w-[100%] md:w-[500px]  rounded-2xl overflow-hidden">
-          {" "}
           <Image
             src="/about/about-img-2.jpg"
             alt="background-img"
