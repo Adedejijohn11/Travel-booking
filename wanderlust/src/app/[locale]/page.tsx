@@ -45,14 +45,19 @@ export default function Home({
             </div>
           </div>
         </div>
-        <div className="h-[100%] w-[100%]  mt-10 ">
-          <SectionOne />
-        </div>
-        <div className="h-[100%] w-[100%] mt-10 bg-green-50 rounded-4xl ">
-          <SectionTwo />
-        </div>
-        <div className="h-[100%] w-[100%] mt-10">
-          <SectionThree />
+        <div
+          id="sections"
+          className="h-full w-full items-center flex flex-col px-2"
+        >
+          <div className="h-[100%] w-[100%]  mt-10 ">
+            <SectionOne />
+          </div>
+          <div className="h-[100%] w-[100%] mt-10 bg-green-50 rounded-4xl ">
+            <SectionTwo />
+          </div>
+          <div className="h-[100%] w-[100%] mt-10">
+            <SectionThree />
+          </div>
         </div>
       </div>
     </>
