@@ -2,71 +2,92 @@
   {
     "id": 1,
     "title": "Fiji's Island ",
+    "price": "$180",
+    "maxGuests": 2,
     "description": "Escape to paradise with fiji's best luxury private island hotels. Ultimate exlusively and beauty await",
     "image": [
       "/islands/fiji-island.jpg",
       "/islands/room-1.jpg",
       "/islands/Yap-island.jpg"
-    ]
+    ],
+    "bookedDates": [{ "checkin": "2025-10-20", "checkout": "2025-12-25" }]
   },
   {
     "id": 2,
     "title": "Yap Island",
+    "price": "$200",
+    "maxGuests": 3,
     "description": "Discove Yap island, where local artisans lead authenitc culture experience",
     "image": [
       "/islands/Yap-island.jpg",
       "/islands/room-2.jpg",
       "/islands/Caribbean-island.jpg"
-    ]
+    ],
+    "bookedDates": [{ "checkin": "2025-10-20", "checkout": "2025-10-25" }]
   },
   {
     "id": 3,
     "title": "Caribbean Island",
+    "price": "$220",
+    "maxGuests": 4,
     "description": "Discove Yap island, where local artisans lead authenitc culture experience",
     "image": [
       "/islands/Caribbean-island.jpg",
       "/islands/room-3.jpg",
       "/islands/maldives-island.jpg"
-    ]
+    ],
+    "bookedDates": [{ "checkin": "2025-11-05", "checkout": "2025-11-25" }]
   },
   {
     "id": 4,
     "title": "Maldives Island",
+    "price": "$150",
+    "maxGuests": 2,
     "description": "Discove Yap island, where local artisans lead authenitc culture experience",
     "image": [
       "/islands/maldives-island.jpg",
       "/islands/room-4.jpg",
       "/islands/Margaritaville-island.jpg"
-    ]
+    ],
+    "bookedDates": [{ "checkin": "2025-10-13", "checkout": "2025-11-20" }]
   },
   {
     "id": 5,
     "title": "Margarita Island",
+    "price": "$250",
+    "maxGuests": 2,
     "description": "Discove Yap island, where local artisans lead authenitc culture experience",
     "image": [
       "/islands/Margaritaville-island.jpg",
       "/islands/room-5.jpg",
       "/islands/regis-island.jpg"
-    ]
+    ],
+    "bookedDates": [{ "checkin": "2025-10-20", "checkout": "2025-10-25" }]
   },
   {
     "id": 6,
     "title": "Regis Island",
+    "price": "$380",
+    "maxGuests": 9,
     "description": "Discove Yap island, where local artisans lead authenitc culture experience",
     "image": [
       "/islands/regis-island.jpg",
       "/islands/room-6.jpg",
       "/islands/tropical-island.jpg"
-    ]
+    ],
+    "bookedDates": [{ "checkin": "2025-12-01", "checkout": "2025-12-30" }]
   },
   {
     "id": 7,
     "title": "Tropical Island",
+    "price": "$190",
+    "maxGuests": 6,
     "description": "Discove Yap island, where local artisans lead authenitc culture experience",
     "image": [
       "/islands/tropical-island.jpg",
       "/islands/room-7.jpg",
       "/islands/fiji-island.jpg"
-    ]
+    ],
+    "bookedDates": [{ "checkin": "2025-12-10", "checkout": "2025-10-25" }]
   }
 ]

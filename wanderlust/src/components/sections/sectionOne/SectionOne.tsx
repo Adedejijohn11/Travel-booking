@@ -1,6 +1,9 @@
+"use client";
+
 import { useTranslations } from "next-intl";
 import { IoIosSearch } from "react-icons/io";
 import IslandCard from "./IslandCard";
+// import { useState } from "react";
 
 const SectionOne = () => {
   const t = useTranslations("SectionOne");
@@ -44,6 +47,7 @@ const SectionOne = () => {
           </span>
         </button>
       </form>
+
       {/* cards */}
       <div>
         <IslandCard />

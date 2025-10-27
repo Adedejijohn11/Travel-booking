@@ -1,12 +1,13 @@
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import type { Metadata } from "next";
+import "react-datepicker/dist/react-datepicker.css";
 import "./globals.css";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { setRequestLocale } from "next-intl/server";
-
 import Footer from "@/components/Footer";
 import Navbar from "@/components/navbar/Navbar";
+import { GlobalContextProvider } from "../contexts/globalContext";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -35,9 +36,11 @@ export default async function RootLayout({
     <html lang="en">
       <body>
         <NextIntlClientProvider>
-          <Navbar />
-          {children}
-          <Footer />
+          <GlobalContextProvider>
+            <Navbar />
+            {children}
+            <Footer />
+          </GlobalContextProvider>
         </NextIntlClientProvider>
       </body>
     </html>
