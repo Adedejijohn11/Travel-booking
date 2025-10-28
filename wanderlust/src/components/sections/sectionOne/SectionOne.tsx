@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { IoIosSearch } from "react-icons/io";
 import IslandCard from "./IslandCard";
 // import { useState } from "react";
+import SearchForm from "@/components/SearchForm";
 
 const SectionOne = () => {
   const t = useTranslations("SectionOne");
@@ -47,6 +48,9 @@ const SectionOne = () => {
           </span>
         </button>
       </form>
+      <div className="h-full w-full ">
+        <SearchForm />
+      </div>
 
       {/* cards */}
       <div>

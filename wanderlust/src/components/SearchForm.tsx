@@ -17,11 +17,11 @@ const SearchForm = ({ layout = "row" }: SearchFormProps) => {
 
   const [checkin, setCheckIn] = useState<Date | null>(search.checkin);
   const [checkout, setCheckout] = useState<Date | null>(search.checkout);
-  const [guests, setGuests] = useState<number>(search.guests);
+  const [guests, setGuests] = useState<number | null>(search.guests || null);
 
   // flatten all booked date ranges from all rooms
   const bookedRanges = data.flatMap((room) =>
-    room.bookedDates.map((b) => ({
+    (room.bookedDates ?? []).map((b) => ({
       start: parseISO(b.checkin),
       end: parseISO(b.checkout),
     }))
@@ -46,9 +46,7 @@ const SearchForm = ({ layout = "row" }: SearchFormProps) => {
   return (
     <form
       onSubmit={handleSearch}
-      className={`flex ${
-        layout === "row" ? "flex-row" : "flex-col"
-      } gap-4 bg-white p-6 `}
+      className={`flex ${layout === "row" ? "flex-row" : "flex-col"} gap-4 `}
     >
       {/* Check-in */}
       <div className="flex flex-col">
@@ -56,14 +54,52 @@ const SearchForm = ({ layout = "row" }: SearchFormProps) => {
         <DatePicker
           selected={checkin}
           onChange={(date) => setCheckIn(date)}
+          placeholderText="Select check-in date"
           filterDate={(date) => !isDateBooked(date)}
           dayClassName={(date) =>
             isDateBooked(date)
               ? "bg-gray-200 text-gray-400 cursor-not-allowed"
               : "text-black hover:bg-blue-100 cursor-pointer"
           }
-          className="border-b-2 p-2 w-full"
+          className="w-[100%] md:w-[400px] lg:w-[250px] xl:w-[410px] border-b-2 p-2 border-gray-300 "
         />
+      </div>
+
+      {/* Check-out */}
+      <div className="flex flex-col">
+        <label className="text-sm font-semibold mb-1">Check-out</label>
+        <DatePicker
+          selected={checkout}
+          onChange={(date) => setCheckout(date)}
+          placeholderText="Select check-out date"
+          minDate={checkin || new Date()}
+          filterDate={(date) => !isDateBooked(date)}
+          dayClassName={(date) =>
+            isDateBooked(date)
+              ? "bg-gray-200 text-gray-400 cursor-not-allowed"
+              : "text-black hover:bg-blue-100 cursor-pointer"
+          }
+          className="w-[100%] md:w-[400px] lg:w-[250px] xl:w-[410px] border-b-2 p-2 border-gray-300 "
+        />
+      </div>
+
+      {/* Guest */}
+      <div className="flex flex-col">
+        <label className="text-sm font-semibold mb-1">Guests</label>
+
+        <select
+          value={guests ?? ""}
+          onChange={(e) => setGuests(Number(e.target.value))}
+          className="w-[100%] md:w-[400px] lg:w-[250px] xl:w-[410px] border-b-2 border-gray-300"
+        >
+          <option value="" disabled>
+            Select guests
+          </option>
+          <option value={1}>1-person</option>
+          <option value={2}>2-people</option>
+          <option value={3}>3-people</option>
+          <option value={4}>4-people</option>
+        </select>
       </div>
     </form>
   );

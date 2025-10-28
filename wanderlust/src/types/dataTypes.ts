@@ -8,7 +8,7 @@ export type datatypes = {
   title: string;
   description: string;
   image: string[];
-  bookedDates: Booking[];
+  bookedDates?: Booking[];
   price: string;
   maxGuests: number;
 };

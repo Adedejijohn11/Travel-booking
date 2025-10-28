@@ -6,7 +6,7 @@ import type { ReactNode } from "react";
 type SearchData = {
   checkin: Date | null;
   checkout: Date | null;
-  guests: number;
+  guests: number | null;
 };
 
 type globalContextType = {
@@ -24,7 +24,7 @@ export const GlobalContextProvider = ({
   const [search, setSearch] = useState<SearchData>({
     checkin: null,
     checkout: null,
-    guests: 1,
+    guests: 0,
   });
 
   return (
