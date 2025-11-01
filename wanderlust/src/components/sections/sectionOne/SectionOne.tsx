@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { IoIosSearch } from "react-icons/io";
+// import { IoIosSearch } from "react-icons/io";
 import IslandCard from "./IslandCard";
 // import { useState } from "react";
 import SearchForm from "@/components/SearchForm";
@@ -49,7 +49,7 @@ const SectionOne = () => {
         </button>
       </form> */}
       <div className="flex flex-col lg:flex-row h-[100%] w-[100%] mt-4 gap-5 ">
-        <SearchForm />
+        <SearchForm layout="row" />
       </div>
 
       {/* cards */}

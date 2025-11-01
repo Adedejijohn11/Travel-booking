@@ -5,12 +5,26 @@ import { IoIosSearch } from "react-icons/io";
 // import { IoIosMenu } from "react-icons/io";
 import { useTranslations } from "next-intl";
 import LocaleSwitcher from "./LocaleSwitcher";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const t = useTranslations("navbar");
   const [navBg, setNavBg] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
+    const segments = pathname.split("/").filter(Boolean);
+    console.log(segments);
+    const locale = segments[0];
+    console.log("Local", locale);
+    const isHomePage = segments.length <= 1;
+
+    // Disable scroll effect on all routes except homepage
+    if (!isHomePage) {
+      setNavBg(true);
+      return;
+    }
+
     const handleScroll = () => {
       const section = document.getElementById("sections");
 
@@ -26,11 +40,14 @@ const Navbar = () => {
       }
     };
 
+    // Run immediately on mount, for refresh.
+    handleScroll();
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [pathname]);
 
   return (
     <div

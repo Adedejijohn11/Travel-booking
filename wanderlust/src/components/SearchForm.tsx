@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useGlobalContext } from "@/app/contexts/globalContext";
 import { IoIosSearch } from "react-icons/io";
-// import Router, { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import data from "@/data/data.json";
 import { addDays, isWithinInterval, parseISO } from "date-fns";
 import DatePicker from "react-datepicker";
@@ -14,7 +14,7 @@ interface SearchFormProps {
 
 const SearchForm = ({ layout = "row" }: SearchFormProps) => {
   const { search, setSearch } = useGlobalContext();
-  // const router = useRouter();
+  const router = useRouter();
 
   const [checkin, setCheckIn] = useState<Date | null>(search.checkin);
   const [checkout, setCheckout] = useState<Date | null>(search.checkout);
@@ -41,7 +41,7 @@ const SearchForm = ({ layout = "row" }: SearchFormProps) => {
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     setSearch({ checkin, checkout, guests });
-    // router.push(/result)
+    router.push("/result");
   };
 
   return (
@@ -58,11 +58,11 @@ const SearchForm = ({ layout = "row" }: SearchFormProps) => {
           selected={checkin}
           onChange={(date) => setCheckIn(date)}
           placeholderText="Select check-in date"
-          filterDate={(date) => !isDateBooked(date)}
+          filterDate={(date) => isDateBooked(date)}
           dayClassName={(date) =>
             isDateBooked(date)
-              ? "bg-gray-200 text-gray-400 cursor-not-allowed"
-              : "text-black hover:bg-blue-100 cursor-pointer"
+              ? "text-black hover:bg-blue-100 cursor-pointer"
+              : "cursor-not-allowed"
           }
           className="w-[100%] md:w-[400px] lg:w-[250px] xl:w-[410px] border-b-2 py-1 border-gray-300 "
         />
@@ -75,12 +75,12 @@ const SearchForm = ({ layout = "row" }: SearchFormProps) => {
           selected={checkout}
           onChange={(date) => setCheckout(date)}
           placeholderText="Select check-out date"
-          minDate={checkin || new Date()}
-          filterDate={(date) => !isDateBooked(date)}
+          minDate={new Date()}
+          filterDate={(date) => isDateBooked(date)}
           dayClassName={(date) =>
             isDateBooked(date)
-              ? "bg-gray-200 text-gray-400 cursor-not-allowed"
-              : "text-black hover:bg-blue-100 cursor-pointer"
+              ? "text-black hover:bg-blue-100 cursor-pointer"
+              : "cursor-not-allowed"
           }
           className="w-[100%] md:w-[400px] lg:w-[250px] xl:w-[410px] border-b-2 py-1 border-gray-300 "
         />
