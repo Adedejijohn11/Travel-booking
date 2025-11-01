@@ -4,9 +4,9 @@ import { useState } from "react";
 import { useGlobalContext } from "@/app/contexts/globalContext";
 import { IoIosSearch } from "react-icons/io";
 import { useRouter } from "next/navigation";
-import data from "@/data/data.json";
-import { addDays, isWithinInterval, parseISO } from "date-fns";
+import resortsData from "@/data/data.json";
 import DatePicker from "react-datepicker";
+import { getGlobalAvailableRanges, isDateAvailable } from "@/lib/utils";
 
 interface SearchFormProps {
   layout?: "row" | "column";
@@ -20,23 +20,7 @@ const SearchForm = ({ layout = "row" }: SearchFormProps) => {
   const [checkout, setCheckout] = useState<Date | null>(search.checkout);
   const [guests, setGuests] = useState<number | null>(search.guests || null);
 
-  // flatten all booked date ranges from all rooms
-  const bookedRanges = data.flatMap((room) =>
-    (room.bookedDates ?? []).map((b) => ({
-      start: parseISO(b.checkin),
-      end: parseISO(b.checkout),
-    }))
-  );
-
-  // check if is already been booked
-  const isDateBooked = (date: Date) => {
-    return bookedRanges.some((range) =>
-      isWithinInterval(date, {
-        start: range.start,
-        end: addDays(range.end, -1),
-      })
-    );
-  };
+  const allAvailableDates = getGlobalAvailableRanges(resortsData);
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -58,9 +42,9 @@ const SearchForm = ({ layout = "row" }: SearchFormProps) => {
           selected={checkin}
           onChange={(date) => setCheckIn(date)}
           placeholderText="Select check-in date"
-          filterDate={(date) => isDateBooked(date)}
+          filterDate={(date) => isDateAvailable(date, allAvailableDates)}
           dayClassName={(date) =>
-            isDateBooked(date)
+            isDateAvailable(date, allAvailableDates)
               ? "text-black hover:bg-blue-100 cursor-pointer"
               : "cursor-not-allowed"
           }
@@ -76,9 +60,9 @@ const SearchForm = ({ layout = "row" }: SearchFormProps) => {
           onChange={(date) => setCheckout(date)}
           placeholderText="Select check-out date"
           minDate={new Date()}
-          filterDate={(date) => isDateBooked(date)}
+          filterDate={(date) => isDateAvailable(date, allAvailableDates)}
           dayClassName={(date) =>
-            isDateBooked(date)
+            isDateAvailable(date, allAvailableDates)
               ? "text-black hover:bg-blue-100 cursor-pointer"
               : "cursor-not-allowed"
           }

@@ -10,7 +10,7 @@
       "/islands/room-1.jpg",
       "/islands/Yap-island.jpg"
     ],
-    "bookedDates": [{ "checkin": "2025-11-26", "checkout": "2025-12-25" }]
+    "availableDates": [{ "checkin": "2025-11-26", "checkout": "2025-10-25" }]
   },
   {
     "id": 2,
@@ -23,7 +23,7 @@
       "/islands/room-2.jpg",
       "/islands/Caribbean-island.jpg"
     ],
-    "bookedDates": [{ "checkin": "2025-10-20", "checkout": "2025-10-25" }]
+    "availableDates": [{ "checkin": "2025-10-20", "checkout": "2025-10-25" }]
   },
   {
     "id": 3,
@@ -36,7 +36,7 @@
       "/islands/room-3.jpg",
       "/islands/maldives-island.jpg"
     ],
-    "bookedDates": [{ "checkin": "2025-10-20", "checkout": "2025-11-15" }]
+    "availableDates": [{ "checkin": "2025-10-20", "checkout": "2025-11-15" }]
   },
   {
     "id": 4,
@@ -49,7 +49,7 @@
       "/islands/room-4.jpg",
       "/islands/Margaritaville-island.jpg"
     ],
-    "bookedDates": [{ "checkin": "2025-10-13", "checkout": "2025-11-20" }]
+    "availableDates": [{ "checkin": "2025-10-13", "checkout": "2025-11-20" }]
   },
   {
     "id": 5,
@@ -62,7 +62,7 @@
       "/islands/room-5.jpg",
       "/islands/regis-island.jpg"
     ],
-    "bookedDates": [{ "checkin": "2025-10-20", "checkout": "2025-11-25" }]
+    "availableDates": [{ "checkin": "2025-10-20", "checkout": "2025-11-25" }]
   },
   {
     "id": 6,
@@ -75,7 +75,7 @@
       "/islands/room-6.jpg",
       "/islands/tropical-island.jpg"
     ],
-    "bookedDates": [{ "checkin": "2025-11-15", "checkout": "2025-10-30" }]
+    "availableDates": [{ "checkin": "2025-11-15", "checkout": "2025-10-30" }]
   },
   {
     "id": 7,
@@ -88,6 +88,6 @@
       "/islands/room-7.jpg",
       "/islands/fiji-island.jpg"
     ],
-    "bookedDates": [{ "checkin": "2025-10-12", "checkout": "2025-10-30" }]
+    "availableDates": [{ "checkin": "2025-10-12", "checkout": "2025-10-30" }]
   }
 ]
