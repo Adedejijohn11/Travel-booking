@@ -1,18 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useGlobalContext } from "@/app/contexts/globalContext";
 import { IoIosSearch } from "react-icons/io";
 import { useRouter } from "next/navigation";
 import resortsData from "@/data/data.json";
 import DatePicker from "react-datepicker";
-import { getGlobalAvailableRanges, isDateAvailable } from "@/lib/utils";
+import { getGlobalAvailableRanges, isDateAvailable } from "@/utils/dateUtils";
 
 interface SearchFormProps {
   layout?: "row" | "column";
+  autoSearch?: boolean;
 }
 
-const SearchForm = ({ layout = "row" }: SearchFormProps) => {
+const SearchForm = ({
+  layout = "row",
+  autoSearch = false,
+}: SearchFormProps) => {
   const { search, setSearch } = useGlobalContext();
   const router = useRouter();
 
@@ -27,6 +31,12 @@ const SearchForm = ({ layout = "row" }: SearchFormProps) => {
     setSearch({ checkin, checkout, guests });
     router.push("/result");
   };
+
+  // useEffect(() => {
+  //   if (autoSearch) {
+  //     setSearch({ checkin, checkout, guests });
+  //   }
+  // }, [checkin, checkout, guests]);
 
   return (
     <form
@@ -89,15 +99,17 @@ const SearchForm = ({ layout = "row" }: SearchFormProps) => {
         </select>
       </div>
 
-      <button
-        type="submit"
-        className="h-[50px] w-[100%] md:w-[400px] lg:w-[190px]  xl:w-[200px] flex  justify-center items-center gap-5 rounded-full text-white bg-foreground"
-      >
-        Search
-        <span>
-          <IoIosSearch />
-        </span>
-      </button>
+      {!autoSearch && (
+        <button
+          type="submit"
+          className="h-[50px] w-[100%] md:w-[400px] lg:w-[190px]  xl:w-[200px] flex  justify-center items-center gap-5 rounded-full text-white bg-foreground"
+        >
+          Search
+          <span>
+            <IoIosSearch />
+          </span>
+        </button>
+      )}
     </form>
   );
 };

@@ -13,7 +13,7 @@ const SectionOne = () => {
     <div className="flex flex-col ">
       <h1 className=" text-[20px] md:text-2xl lg:text-5xl">{t("find")}</h1>
       <div className="flex flex-col lg:flex-row h-[100%] w-[100%] mt-4 gap-5 ">
-        <SearchForm layout="row" />
+        <SearchForm layout="row" autoSearch={false} />
       </div>
 
       {/* cards */}

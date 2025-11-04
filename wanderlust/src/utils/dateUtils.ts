@@ -11,14 +11,15 @@ export const getGlobalAvailableRanges = (data: any[]) => {
   );
 };
 
+// Checks if a given date is within the available ranges of that resort
 export const isDateAvailable = (
   date: Date,
-  ranges: { start: Date; end: Date }[]
+  availableRanges: { start: Date; end: Date }[]
 ) => {
-  return ranges.some((range) =>
+  return availableRanges.some((range) =>
     isWithinInterval(date, {
       start: range.start,
-      end: addDays(range.end, -1),
+      end: addDays(range.end, +1),
     })
   );
 };
