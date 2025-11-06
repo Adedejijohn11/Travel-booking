@@ -6,6 +6,7 @@ import { IoIosSearch } from "react-icons/io";
 import { useTranslations } from "next-intl";
 import LocaleSwitcher from "./LocaleSwitcher";
 import { usePathname } from "next/navigation";
+import { Link } from "@/i18n/navigation";
 
 const Navbar = () => {
   const t = useTranslations("navbar");
@@ -57,9 +58,9 @@ const Navbar = () => {
           : "bg-transparent top-2 text-white"
       }`}
     >
-      <div className=" text-center text-2xl lg:text-4xl font-bold ">
+      <Link href="/" className=" text-center text-2xl lg:text-4xl font-bold ">
         Wanderlust
-      </div>
+      </Link>
       <ul className="hidden  lg:flex gap-2 list-none  w-auto">
         <li
           className={`flex items-center justify-center border-0 md:border-2  rounded-2xl h-[30px] w-[150px] px-0 md:px-2 ${

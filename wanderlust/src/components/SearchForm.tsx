@@ -32,11 +32,11 @@ const SearchForm = ({
     router.push("/result");
   };
 
-  // useEffect(() => {
-  //   if (autoSearch) {
-  //     setSearch({ checkin, checkout, guests });
-  //   }
-  // }, [checkin, checkout, guests]);
+  useEffect(() => {
+    if (autoSearch && checkin && checkout && guests) {
+      setSearch({ checkin, checkout, guests });
+    }
+  }, [autoSearch, checkin, checkout, guests]);
 
   return (
     <form

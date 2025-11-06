@@ -11,4 +11,5 @@ export type datatypes = {
   bookedDates?: Booking[];
   price: string;
   maxGuests: number;
+  bed: number;
 };

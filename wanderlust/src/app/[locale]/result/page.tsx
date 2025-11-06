@@ -6,6 +6,9 @@ import Image from "next/image";
 import SearchForm from "@/components/SearchForm";
 import { useGlobalContext } from "@/app/contexts/globalContext";
 import { filterResorts } from "@/utils/filterResort";
+import { Link } from "@/i18n/navigation";
+import { IoIosPeople } from "react-icons/io";
+import { FaBed } from "react-icons/fa6";
 
 const page = () => {
   const { search } = useGlobalContext();
@@ -43,7 +46,7 @@ const page = () => {
                 key={resort.id}
                 className="h-[300px]  flex flex-row  bg-green-50 "
               >
-                <div className="w-[300px] ">
+                <Link href={`/resort/${resort.id}`} className="w-[300px] ">
                   <Image
                     src={resort.image[1]}
                     alt={resort.title}
@@ -51,11 +54,26 @@ const page = () => {
                     height={100}
                     className="h-full w-full object-cover"
                   />
-                </div>
-                <div className="w-[489px] ">
-                  <div className="flex  justify-between p-4">
+                </Link>
+                <div className="w-[489px] p-4">
+                  <div className="flex  justify-between ">
                     <p>{resort.title}</p>
                     <p>{resort.price}</p>
+                  </div>
+                  <div className="flex gap-2">
+                    <p className="flex gap-1 ">
+                      <span className="text-2xl">
+                        <IoIosPeople />
+                      </span>
+                      {resort.maxGuests} |
+                    </p>
+
+                    <p className="flex gap-1 ">
+                      <span className="text-2xl">
+                        <FaBed />
+                      </span>
+                      {resort.bed}
+                    </p>
                   </div>
                 </div>
               </div>
