@@ -6,6 +6,9 @@ import resortsData from "@/data/data.json";
 import { useGlobalContext } from "@/app/contexts/globalContext";
 import { filterResorts } from "@/utils/filterResort";
 import Image from "next/image";
+import Details from "@/components/resortDetails/Details";
+import ResortFeature from "@/components/resortDetails/resortFeature";
+import SearchForm from "@/components/SearchForm";
 
 const ResortDetailPage = () => {
   const { id } = useParams();
@@ -32,21 +35,17 @@ const ResortDetailPage = () => {
     }
   }, [resort, search?.checkin, search?.checkout, search?.guests]);
 
-  return (
-    <div className="h-[300px] w-full bg-green-600 mt-[50px]">
-      <div>
-        {/* <div className="w-[300px] ">
-          <Image
-            src={resort.image}
-            alt={resort?.title}
-            width={500}
-            height={100}
-            className="h-full w-full object-cover"
-          />
-        </div> */}
+  // Handle if no resort found
+  if (!resort) {
+    return (
+      <div className="text-center py-10 text-red-500">Resort not found.</div>
+    );
+  }
 
-        <p>{resort?.description}</p>
-      </div>
+  return (
+    <div className="h-full w-full  mt-[70px] px-2 ">
+      <Details resort={resort} />
+      <ResortFeature />
     </div>
   );
 };
