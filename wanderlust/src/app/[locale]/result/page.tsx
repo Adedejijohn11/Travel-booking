@@ -30,12 +30,12 @@ const page = () => {
   }, [search.checkin, search.checkout, search.guests]);
 
   return (
-    <div className="h-[100%] w-[100%] flex justify-center bg-cyan-500">
-      <div className="h-[100%] w-[90%] mt-[60px] flex flex-row gap-8  bg-amber-300">
-        <div className="w-[40%] bg-red-500">
+    <div className="h-[100%] w-[100%] flex justify-center ">
+      <div className="h-[100%] w-[90%] mt-[90px] flex flex-col lg:flex-row gap-[50px] ">
+        <div className="w-full lg:w-[40%] ">
           <SearchForm layout="column" autoSearch={true} />
         </div>
-        <div className=" w-[60%] flex flex-col gap-5 bg-green-400">
+        <div className="w-full lg:w-[60%] flex flex-col gap-5 bg-green-400">
           {availableResorts.length === 0 ? (
             <p className="flex justify-center items-center h-[250px] w-[100%] text-2xl ">
               No resorts available for your selected dates.
@@ -44,9 +44,12 @@ const page = () => {
             availableResorts.map((resort) => (
               <div
                 key={resort.id}
-                className="h-[300px]  flex flex-row  bg-green-50 "
+                className="flex flex-col lg:flex-row bg-green-50"
               >
-                <Link href={`/resort/${resort.id}`} className="w-[300px] ">
+                <Link
+                  href={`/resort/${resort.id}`}
+                  className="h-[300px] w-full lg:w-[300px]"
+                >
                   <Image
                     src={resort.image[1]}
                     alt={resort.title}
@@ -55,12 +58,12 @@ const page = () => {
                     className="h-full w-full object-cover"
                   />
                 </Link>
-                <div className="w-[489px] p-4">
-                  <div className="flex  justify-between ">
-                    <p>{resort.title}</p>
-                    <p>{resort.price}</p>
+                <div className="relative w-full lg:w-[501px] p-4 flex flex-col justify-between ">
+                  <div className="flex justify-between">
+                    <p className="text-[20px]">{resort.title}</p>
+                    <p className="text-[20px]">{resort.price}</p>
                   </div>
-                  <div className="flex gap-2">
+                  <div className="flex gap-2 ">
                     <p className="flex gap-1 ">
                       <span className="text-2xl">
                         <IoIosPeople />
@@ -75,6 +78,11 @@ const page = () => {
                       {resort.bed}
                     </p>
                   </div>
+                  <Link href={`/resort/${resort.id}`}>
+                    <button className="w-[300px] border-2 border-foreground">
+                      View
+                    </button>
+                  </Link>
                 </div>
               </div>
             ))

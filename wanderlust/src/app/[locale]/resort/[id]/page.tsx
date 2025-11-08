@@ -33,11 +33,11 @@ const ResortDetailPage = () => {
   }, [resort, search?.checkin, search?.checkout, search?.guests]);
 
   return (
-    <div className="h-[300px] w-full bg-green-600 mt-20">
+    <div className="h-[300px] w-full bg-green-600 mt-[50px]">
       <div>
         {/* <div className="w-[300px] ">
           <Image
-            src={resort?.image}
+            src={resort.image}
             alt={resort?.title}
             width={500}
             height={100}
