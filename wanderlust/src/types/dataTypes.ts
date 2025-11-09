@@ -12,4 +12,6 @@ export type datatypes = {
   price: string;
   maxGuests: number;
   bed: number;
+  livingRoom: number;
+  bathRoom: number;
 };

@@ -5,6 +5,8 @@
     "price": "$180",
     "maxGuests": 2,
     "bed": 1,
+    "livingRoom": 1,
+    "bathRoom:": 1,
     "description": "Escape to paradise with fiji's best luxury private island hotels. Ultimate exlusively and beauty await",
     "image": [
       "/islands/fiji-island.jpg",
@@ -16,9 +18,11 @@
   {
     "id": 2,
     "title": "Yap Island",
-    "price": "$200",
+    "price": "$350",
     "maxGuests": 3,
     "bed": 2,
+    "livingRoom": 1,
+    "bathRoom:": 2,
     "description": "Discove Yap island, where local artisans lead authenitc culture experience",
     "image": [
       "/islands/Yap-island.jpg",
@@ -30,9 +34,11 @@
   {
     "id": 3,
     "title": "Caribbean Island",
-    "price": "$220",
+    "price": "$420",
     "maxGuests": 4,
     "bed": 2,
+    "livingRoom": 1,
+    "bathRoom:": 2,
     "description": "Discove Yap island, where local artisans lead authenitc culture experience",
     "image": [
       "/islands/Caribbean-island.jpg",
@@ -44,9 +50,11 @@
   {
     "id": 4,
     "title": "Maldives Island",
-    "price": "$150",
+    "price": "$200",
     "maxGuests": 2,
     "bed": 1,
+    "livingRoom": 1,
+    "bathRoom:": 1,
     "description": "Discove Yap island, where local artisans lead authenitc culture experience",
     "image": [
       "/islands/maldives-island.jpg",
@@ -61,6 +69,8 @@
     "price": "$250",
     "maxGuests": 2,
     "bed": 1,
+    "livingRoom": 1,
+    "bathRoom:": 1,
     "description": "Discove Yap island, where local artisans lead authenitc culture experience",
     "image": [
       "/islands/Margaritaville-island.jpg",
@@ -75,6 +85,8 @@
     "price": "$380",
     "maxGuests": 3,
     "bed": 2,
+    "livingRoom": 1,
+    "bathRoom:": 2,
     "description": "Discove Yap island, where local artisans lead authenitc culture experience",
     "image": [
       "/islands/regis-island.jpg",
@@ -89,6 +101,8 @@
     "price": "$790",
     "maxGuests": 4,
     "bed": 3,
+    "livingRoom": 1,
+    "bathRoom:": 2,
     "description": "Discove Yap island, where local artisans lead authenitc culture experience",
     "image": [
       "/islands/tropical-island.jpg",
