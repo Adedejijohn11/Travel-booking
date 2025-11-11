@@ -4,7 +4,7 @@ import SearchForm from "../SearchForm";
 
 const Details = ({ resort }: { resort: any }) => {
   return (
-    <div className="h-full w-full  ">
+    <div className="h-full w-full">
       <div className="flex flex-col">
         <div className="flex p-1 gap-2 rounded-[10px]  border-1  border-foreground">
           <span className="h-[35px] w-[300px]  flex items-center justify-center rounded-[10px] border-1 border-foreground  bg-green-400">
@@ -31,32 +31,6 @@ const Details = ({ resort }: { resort: any }) => {
           <p>{resort?.description}</p>
         </div>
       </div>
-      {/* <div className="w-[30%] flex flex-col gap-5  ">
-        <div className="flex flex-col p-2 rounded-[10px] border-1 border-foreground">
-          <h3 className="text-[20px] mb-3">Contact Us</h3>
-          <p className="flex justify-between">
-            Email <span>reservations@gamil.com</span>
-          </p>
-          <p className="flex justify-between">
-            Number <span>+453 837-3909</span>
-          </p>
-        </div>
-        <div className="flex flex-col p-2 rounded-[10px] border-1 border-foreground">
-          <SearchForm layout="column" autoSearch={true} />
-          <div className="flex justify-between mt-20 mb-5">
-            <p>Price Pernight</p>
-            <span>{resort?.price}</span>
-          </div>
-          <button className="text-white flex justify-center p-2 rounded-2xl bg-foreground">
-            Reserve
-          </button>
-        </div>
-      </div> */}
-
-      {/* <div>
-        
-        
-      </div> */}
     </div>
   );
 };
