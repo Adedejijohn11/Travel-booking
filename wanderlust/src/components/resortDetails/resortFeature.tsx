@@ -6,7 +6,7 @@ import { IoBedOutline } from "react-icons/io5";
 
 const ResortFeature = ({ resort }: { resort: any }) => {
   return (
-    <div className=" h-full w-full pt-10">
+    <div id="resortFeature" className=" h-full w-full pt-10">
       <h1 className="text-2xl mb-3">Resort Features</h1>
       <div className="rounded-[10px] px-4 border-1 border-foreground">
         <div className="h-[100px] flex justify-between ">

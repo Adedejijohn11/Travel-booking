@@ -1,21 +1,49 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import SearchForm from "../SearchForm";
 
 const Details = ({ resort }: { resort: any }) => {
+  const [sectionId, setSectionId] = useState("details");
+
+  const handleChange = (sectionId: string) => {
+    setSectionId(sectionId);
+
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <div className="h-full w-full">
+    <div id="details" className="h-full w-full">
       <div className="flex flex-col">
         <div className="flex p-1 gap-2 rounded-[10px]  border-1  border-foreground">
-          <span className="h-[35px] w-[300px]  flex items-center justify-center rounded-[10px] border-1 border-foreground  bg-green-400">
+          <button
+            onClick={() => handleChange("details")}
+            className={`h-[35px] w-[100%]  flex items-center justify-center rounded-[10px] border-1 border-foreground ${
+              sectionId === "details" ? "bg-foreground text-white" : "bg-white"
+            }`}
+          >
             Details
-          </span>
-          <span className="h-[35px] w-[300px]  flex items-center justify-center rounded-[10px] border-1 border-foreground">
+          </button>
+          <button
+            onClick={() => handleChange("resortFeature")}
+            className={`h-[35px] w-[100%]  flex items-center justify-center rounded-[10px] border-1 border-foreground ${
+              sectionId === "resortFeature"
+                ? "bg-foreground text-white"
+                : "bg-white"
+            }`}
+          >
             Resort Feature
-          </span>
-          <span className="h-[35px] w-[300px] flex items-center justify-center rounded-[10px] border-1 border-foreground ">
+          </button>
+          <button
+            onClick={() => handleChange("location")}
+            className={`h-[35px] w-[100%] flex items-center justify-center rounded-[10px] border-1 border-foreground ${
+              sectionId === "location" ? "bg-foreground text-white" : "bg-white"
+            }`}
+          >
             Location
-          </span>
+          </button>
         </div>
         <div className="h-[500px] mt-5 rounded-[10px] overflow-hidden">
           <Image
